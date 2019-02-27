@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!-- 
+WELCOME USER! You've reached the source code for a manual created by STS. If you plan on updating or editing this manual, then you're in the right place!
+
+Before editing any STS manuals, please read through the editing guide at https://sts.doit.wisc.edu/manual-editing-guide and follow all recommendations. It is important that we follow the conventions set in the guide in order to maintain quality and consistency across all of our training materials.
+
+Good luck, and have fun!
+-->
+
+
+    <!-- page title -->
+    <title>Excel 2-Functions</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Software manual provided by Software Training for Students at the University of Wisconsin.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' id='uwmadison-fonts-css'  href='https://brand.wisc.edu/content/themes/uw-theme/dist/fonts/uw160/fonts.css?ver=1.1.1' type='text/css' media='all' /><link rel="stylesheet" type="text/css" href="../master-files/css/stylesheet.css">
+        <script src="../master-files/highlight.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="../master-files/smooth-scroll.js"></script>
+        <script src="../master-files/primary-functions.js"></script>
+        <script src="../master-files/ga.js"></script>    
+</head>
+
+<body>
+    <!-- begin front page -->
+    <div class="manual-front-page"> 
+        <div id="coverpage-title"> 
+            <h1>Excel 2</h1> 
+            <h2>Advanced Functions</h2> 
+        </div> 
+        
+        <div id="about-page"></div> 
+        
+        <div id="outline"></div> 
+        
+    </div>                
+    <!-- end front page -->
+
+
+    <!-- BEGIN MAIN CONTENT -->
+
+    <section class="topic"> 
+        <h1>Introduction</h1>
+        <p>Welcome to Excel 2: Functions! This course will build upon the basic skills you learned in the first Excel class. After this class, you will be able to create, manipulate, and analyze your own spreadsheets in multiple ways.</p>
+         <h2>About this Class</h2>
+        <p>Excel 2: Functions is one of the three intermediate Excel classes offered by Software Training for Students. These three classes (Functions, Data Visualization, and Analysis) are designed so you can take them independently in any order. During
+            this class, you will be introduced to some of Excel's built-in functions, the methods used to access all of its powerful functions, and how to utilize its calculation abilities to your advantage.</p>
+        <p>As of 2016, Microsoft Office has combined its PC and Mac versions to provide the same user experience to all users. However, one major difference remains, that it, the use of the Control and Command keys on Windows and Mac respectively for keyboard shortcuts. These keys essentially peform the same function and are used in conjuction with other keys to perform various tasks quicker. Your instructor will mention these interchangeably.</p>
+        <div class="full-width-image">
+        <img src="images/ctrl-cmd.png" alt="Control vs Command buttons">
+        </div>
+         <h2>Topics</h2>
+        <p>The following topics will be covered in this class:</p>
+        <ul>
+            <li>
+                <p>Workbooks, worksheets, and linking data</p>
+            </li>
+            <li>
+                <p>Logical functions</p>
+            </li>
+            <li>
+                <p>Lookup, array and summary functions</p>
+            </li>
+            <li>
+                <p>Formulas tab</p>
+            </li>
+            <li>
+                <p>Keyboard shortcuts (Appendix)</p>
+            </li>
+        </ul>
+         <h2>Required Skills</h2>
+        <p>You should have a basic knowledge of the Windows environment, and have taken Excel 1, or have equivalent experience.</p>
+        <p>Key background skills needed include familiarity with the following:</p>
+        <ul>
+            <li>
+                <p>Excel terminology such as rows, columns, cells, and cell names</p>
+            </li>
+            <li>
+                <p>Entering and editing data</p>
+            </li>
+            <li>
+                <p>Using basic formulas (addition, subtraction, multiplication, division)</p>
+            </li>
+            <li>
+                <p>Using basic functions (SUM, AVERAGE)</p>
+            </li>
+        </ul>
+         <h2>Other Requirements</h2>
+        <p>In addition to this manual, you will need to download the class files for the course and have access to a computer with Microsoft Office 2016. The class files can be downloaded at the STS website or will be provided by your instructor.</p>
+        <p>If you are working on an older version of Office, some features may be located in different locations or, on rare occasions, may be unavailable altogether. In such cases, setting up an Ask-a-Trainer appointment with an STS trainer via the STS
+            website would allow you to work through your specific questions. Otherwise, Microsoft Office is also available on most campus computer labs. Office 2016 can also be acquired free of cost as a student here: <b><a href="https://it.wisc.edu/services/office-365/">it.wisc.edu/services/office-365/</a></b>
+        </p>
+
+        <div class="page-break"></div>
+    </section>
+
+    <section class="topic">
+         <h1>Workbooks, Worksheets, and Linking Data</h1>
+        <p>In Excel 1, there was a brief introduction to Excel files, workbooks, and worksheets. In this course, you will learn how to manipulate and organize your worksheets using various options provided to you by Excel. These options can help to make
+            your worksheets more efficient and reduce errors when making changes.</p>
+         <h2>Workbooks vs. Worksheets</h2>
+        <p>A single Excel file (usually of .xls or .xlsx format) is called a "workbook", and by default contains three "worksheets". Each worksheet is a unique workspace in which data can be stored and manipulated. If desired, data can be linked between
+            worksheets. All worksheets in a workbook can be viewed near the bottom of the workbook in an area called the "Worksheet Tabs".</p>
+         <h2>Working with Worksheets</h2>
+        <p>To create a new Excel file, locate and open Excel 2016, and select Blank Workbook. If Excel is already running, you can create a new workbook by navigating to the File tab, selecting New from the options on the left, and selecting Blank Workbook.
+        </p>
+        <p>Find the worksheet tabs by naviagting to the bottom-left of the Excel window. Click the encircled <b>+</b> icon to create new worksheets.</p>
+        <div class="centered-image-small border">
+            <img src="images/worksheets.png" alt="Sample Worksheet">
+        </div>
+         <h3>Worksheet options</h3>
+        <div class="side-image-large border">
+            <img src="images/worksheets-menu.png" alt="Worksheet options">
+        </div>
+        <p>Right-clicking on a worksheet tab gives you access to several options:</p>
+        <ul>
+            <li>
+                <p><b>Insert</b> adds a new worksheet, in the same way that clicking on the Insert Worksheet icon works.</p>
+            </li>
+            <li>
+                <p><b>Delete</b> permanently removes the worksheet from the file. If done accidentally, exit the file without saving to reopen to the last saved state.</p>
+            </li>
+            <li>
+                <p><b>Rename</b> allows you to change the worksheet's name.</p>
+            </li>
+            <li>
+                <p><b>Move</b> or <b>Copy</b> allows you to reorder the tabs. Alternatively, you may also click and drag to move them.</p>
+            </li>
+            <li>
+                <p><b>View Code</b> is covered in Excel 2: Analysis and Excel 3: Macros and VBA.</p>
+            </li>
+            <li>
+                <p><b>Protect Sheet</b> allows the user to password-protect a sheet from accidental or unauthorized editing.</p>
+            </li>
+            <li>
+                <p><b>Tab Color</b> provides the option to color-code different tabs. This is useful to organize worksheet into different categories.</p>
+            </li>
+            <li>
+                <p><b>Hide</b> removes a worksheet from being visible in the Worksheet Tabs area.</p>
+            </li>
+            <li>
+                <p><b>Unhide</b> reverses the effects of hide and displays any previously hidden worksheets.</p>
+            </li>
+            <li>
+                <p><b>Select All Sheets</b> makes all worksheets in the workbook active so actions can be applied to all worksheets at once.</p>
+            </li>
+        </ul>
+
+        <h2>Referencing Data in Another Worksheet</h2>
+        <p>Sometimes, it may be useful to take data from one worksheet and use it on a different worksheet. For example, you may want to have all your data on one sheet but your calculations on a different sheet, as shown below.</p>
+        <h3>Display Data from Another Worksheet</h3>
+        <ol class="instruction-list">
+            <li>
+                <p>Open the file <b>Excel2-Functions.xlsx</b></p>
+                <p>Note that Excel will sometimes open files downloaded from the internet in Read-Only mode. This is done to protect users from possible malicious content. Click the Enable Editing button if you are prompted by Excel.</p>
+                
+            </li>
+            <div class="full-width-image"> <img src="images/class-file-wksht-list.PNG" alt="Class file worksheets"> </div>
+            <li>
+                <p>Have a look at the different worksheets. We will use the two columns of the Data worksheet to perform calculations in the Calculations worksheet.</p>
+            </li>
+            <div class="centered-image-tiny border"> <img src="images/data-wksht-table.PNG" alt="Column A and B"> </div>
+            <li>
+                <p>Switch to the Calculations worksheet. This worksheet will be completed using information from the Data tab. First, we will simply insert a number from each column in the Data worksheet into the Calculations worksheet. All of our data is in cells <span class="type-text">A2:B11</span> in the Data worksheet.</p>
+                <div class="centered-image-medium border"> <img src="images/calculations-wksht-table.PNG" alt="SAmple worksheet"> </div>
+            </li>
+            <li>
+                <p>In cell <span class="type-text">A2</span>, Enter the following: <span class="type-text">=Data!A5</span>.</p>
+                <div class="centered-image-medium border">
+                <img src="images/data-ref-6.PNG" alt="Adding formula">
+                </div>
+            </li>
+            <li>
+                <p>Go to the Data worksheet, and Change the value of cell <span class="type-text">A5</span> from 6 to 4.</p>
+            </li>
+            <li>
+                <p>Return to the Calculations worksheet. Notice that the change to cell <span class="type-text">A5</span> of the Data worksheet was reflected in our Calculations worksheet. Using the '=&lt;Worksheet_Name&gt;!&lt;Cell_Address&gt;' formula, we
+                    created a link to information in another sheet, rather than simply copying the information.</p>
+            </li>
+            <li>
+                <p>In cell <span class="type-text">C2</span>, Type '=' and then Switch to the Data worksheet.</p>
+            </li>
+            <li>
+                <p>Click in cell <span class="type-text">B8</span> and press Enter while still in the Data Worksheet.</p>
+            </li>
+            <li>
+                <p>Navigate back to the Calculations worksheet. The cell in our Calculations worksheet now reflects the value of cell B8 from the Data worksheet. Note that the syntax of the referencing formula remains the same.</p>
+                <div class="centered-image-medium border">
+                <img src="images/data-ref-4-12.PNG" alt="Worked example">
+                </div>
+            </li>
+        </ol>
+        <h3>Using Worksheet References in Formulas or Functions</h3>
+        <p>The same worksheet reference syntax can be used in formulas or functions.</p>
+        <ol class="instruction-list">
+            <li>
+                <p>Navigate to the Calculations worksheet.</p>
+            </li>
+            <li>
+                <p>In cell <span class="type-text">B6</span> Enter: <span class="type-text">=Data!A6 + Data!B3</span>.</p>
+            </li>
+            <li>
+                <p>In cell <span class="type-text">B10</span> Enter: <span class="type-text">=SUM(Data!A2:A11)</span>.</p>
+                <div class="centered-image-medium border">
+                <img src="images/data-ref-sum.PNG" alt="Adding formulas">
+                </div>
+            </li>
+        </ol>
+        <p>This should give the sum of the values in Column A on the Data worksheet. Notice that you do not need to specifiy the worksheet for cell A11. This is because Excel understands that cells A2 to A11 is a unit of cells, and therefore must exist on the same worksheet.</p>
+        <p>So far, we have only created links to single cells in the Calculations worksheet. If we needed to link a large amount of data, this would be a very time-consuming process. Let's try a shortcut to create multiple links at once.</p>
+        <ol class="instruction-list">
+            <li>
+                <p>On the Data worksheet, Select cells <span class="type-text">B2:B11</span>.</p>
+            </li>
+            <li>
+                <p>Copy the selected by cells by Pressing Ctrl/Cmd+C.</p>
+            </li>
+            <li>
+                <p>Switch to the Calculations worksheet and Click in cell <span class="type-text">B15</span>.</p>
+            </li>
+            <li>
+                <p>Click on the little arrow beneath the Paste button on the Home tab.</p>
+            </li>
+            <li>
+                <p>Click on the Paste Link under the Other Paste Options area.</p>
+                <div class="centered-image-tiny border">
+                <img src="images/data-paste-link.PNG" alt="Paste Link option">
+                </div>
+            </li>
+        </ol>
+        <p>We have now linked multiple cells at once. Click on one of the cells and look at the formula bar; it should show the linked address.</p>
+        <div class="centered-image-medium border"> <img src="images/data-paste-link-colB.PNG" alt="Multiple linked cells"> </div>
+        <p>As seen in this example, using data from a different worksheet for display or calculations is basically as simple as referencing data in the same worksheet. However, it can allow you to stay more organized and have a brief summary worksheet that
+            is easy to look at and understand.</p>
+    </section>
+
+    <section class="topic">
+         <h1>Logical Functions</h1>
+        <p>Excel 1 covered basic functions such as sum, min, max, and average, but Excel has many more powerful functions that do more than basic mathematical calculations. We will now practice with several of these functions and see how Excel can save us
+            time when dealing with large amounts of data. All of these functions utilize Excel's "live updating," so as the date reference changes, the functions will recalculate.</p>
+        <p>Switch to the Logical Functions worksheet for this section.</p>
+        <div class="full-width-image border"><img src="images/log_fns-wksht.PNG" alt="Logical Functions sheet"></div>
+         <h2>COUNTA Function</h2>
+        <p>The first function we will try is the COUNTA function. This function counts the number of non-empty cells in a given range. A non-empty cell can be filled with a number, letter, or symbol to be counted by this function. If we only wanted to count
+            cells with numeric values, we would use the COUNT function.</p>
+        <p>Here, we will use the COUNTA function to determine the number of surveys we have received from our co-workers in cells A5 to A10. An X has been placed next to their name if they have returned our survey.</p>
+        <ol class="instruction-list">
+            <li>
+                <p>In cell B13 type: <span class="type-text">=COUNTA(B5:B10)</span> and press Enter. You should now see that 4 of your coworkers have returned the survey.</p>
+                <div class="centered-image-medium border">
+                <img src="images/log_fns-counta.PNG" alt="Using COUNTA function 1">
+                </div>
+            </li>
+            <li>
+                <p>Try typing in "yes" or "*" in cell <span class="type-text">B6</span>. Notice that the function still counts all of the non blank cells.</p>
+                <div class="centered-image-tiny border"><img src="images/log_fns-counta-yes.PNG" alt="Using COUNTA function 2">
+                </div>
+            </li>
+        </ol>
+         <h2>COUNTIF Function</h2>
+        <ol class="instruction-list">
+            <li>
+                <p>Select cell <span class="type-text">B28</span> and click the Insert Function button next to the formula bar.</p>
+                <p>This brings up the "Insert Function" dialog box. It is often convenient to use this method the first time you enter a formula. It walks you through the criteria each function requires and puts it into the required syntax. It can guide
+                    you in the proper use of parentheses, periods, colons, and quotes.</p>
+            </li>
+            <li>
+                <p>In the Search bar at the top of the pop-up box, Type 'countif' and click Go.</p>
+                <div class="centered-image-medium border">
+                <img src="images/log_fns-insert-function.PNG" alt="Insert function menu">
+                </div>
+            </li>
+            <li>
+                <p>Click OK.</p>
+                <p>The "Function Arguments" dialog box is displayed for the COUNTIF function. The arguments are listed with input boxes. When you click in the input boxes, an explanation of what the argument asks for is provided.</p>
+                <p>For the COUNTIF function, the formula's first input designates the range to perform the count on. The second input is the criteria the function will count.</p>
+            </li>
+            <li>
+                <p>Place your cursor in the Range box and then Select B20:B25 in the worksheet.</p>
+            </li>
+            <li>
+                <p>Type "yes" into the Criteria box, including the quotation marks.</p>
+            </li>
+            <li>
+                <p>Click OK.</p>
+            </li>
+        </ol>
+        <p>Excel inserts the formula: <span class="type-text">=COUNTIF(B20:B25,"yes")</span> into cell <span class="type-text">B28</span>. If you did not include the quotation marks around yes, Excel will automatically insert them for you. This is because we want Excel to compare explicitly to the word spelled y-e-s. If quotes were omitted, Excel would believe that yes was one of its keywords (like function names) and try to perform the yes command, which would result in an error. For this reason, it is convenient to use the Insert Function button in order to prevent syntax errors.</p>
+        <p>For the remaining examples on this worksheet, the actual syntax of each function is provided in the exercise steps. Despite this, you are encouraged to insert the functions by hand, using the insert function button, or using the drop down menu that appears when you start typing a function. Note that copying and pasting functions from this manual may result in errors, as Excel only works with straight quotation marks. It is best to get experience with all methods. Your instructor will be switching between both methods and can answer any specific questions that may arise.</p>
+        <ol class="instruction-list">      
+            <li>
+                <p>In cell <span class="type-text">B29</span> Insert the function: <span class="type-text">=COUNTIF(B20:B25,"no")</span>. The function counts the number of "no" responses to be two.</p>
+                <div class="centered-image-medium border">
+                <img src="images/log_fns-countif-yesno.PNG" alt="COUNTIF with no">
+                </div>
+                <p>COUNTIF can also be used to count cells in a range that meet certain numeric criteria. In the next example we will see how many of our employees receive a bonus by selling at least $500 worth of merchandise.</p>
+            </li>
+            <li>
+                <p>In cell <span class="type-text">E28</span> Insert the function: <span class="type-text">=COUNTIF(E20:E25,"&gt;=500")</span>.</p>
+                <div class="centered-image-medium border">
+                <img src="images/log_fns-countif-bonus-1.PNG" alt="COUNTIF for bonuses"> 
+                </div>
+                <p>This will count the number of employees in range E20:E25 that have greater than or equal to $500 in sales. To evaluate the special expression with >= we again need to use quotation marks.</p>
+                <p>Next, we will count the number of employees that will not receive their bonus this month.</p>
+            </li>
+            <li>
+                <p>In cell <span class="type-text">E29</span> Insert the function: <span class="type-text">=COUNTIF(E20:E25,"&lt;500")</span>
+                </p>
+                <p>The criteria of the COUNTIF function can also be another cell. For instance, instead of typing $500 directly into both equations, COUNTIF can look for the number in a different cell. The advantage of this is that it allows you enter $500
+                    only once and then makes it easier to change. Let's try this out.</p>
+            </li>
+            <li>
+                <p>In cell <span class="type-text">I27</span> Enter the target bonus of 500.</p>
+            </li>
+            <li>
+                <p>In cell <span class="type-text">I28</span> Insert the function: <span class="type-text">=COUNTIF(I20:I25,"&gt;="&I27)</span>.</p>
+                
+                <div class="centered-image-medium border"> 
+                <img src="images/log_fns-countif-bonus-4.PNG" alt="COUNTIF bonus targets"> 
+                </div>
+                
+                <p>This tells Excel to give a bonus if the sales are greater than or equal to the bonus target, in this case cell <span class="type-text">I27</span> which is $500.</p>
+            </li>
+            <li>
+                <p>In cell <span class="type-text">I29</span> Insert the function: <span class="type-text">=COUNTIF(I20:I25,"&lt;"&I27)</span>.</p>
+            </li>
+            <li>
+                <p>Try Changing the Bonus Target in cell <span class="type-text">I27</span> and see how our results update accordingly.</p>
+                <div class="centered-image-medium border">
+                <img src="images/log_fns-countif-bonus-3.PNG" alt="Changing bonus target">
+                </div>
+                <p>&nbsp;</p>
+          </li>
+        </ol>
+         <h2>OR and AND Functions</h2>
+        <p>We will cover two more commands that also perform a test based on criteria that we define, but they will return a value of TRUE or FALSE instead of a count. These two functions are called OR and AND. Both of these functions can test multiple cells
+            for different criteria. The only difference is that the OR function only needs one value in a list to be true to return a TRUE value. The AND function needs all values in a list to be true to return a TRUE value. The following examples will
+            show how this works.</p>
+        <p>We will test whether our sales team met the quota for the month. In this example, the quotas are Total Sales of over $3500 OR over 300 Total Items Sold. Here, we don't care which quota was met.</p>
+        <ol class="instruction-list">
+            <li>
+                <p>In cell <span class="type-text">B45</span> Insert the function: <span class="type-text">=OR(B40>3500, B41>300)</span>.</p>
+                <div class="centered-image-medium border">
+                <img src="images/log_fns-or.PNG" alt="Adding OR formula">
+                </div>
+                <p>Since we sold more than $3500 this month, the OR function returns a value of TRUE. Notice that it doesn't matter that our second quota of 300 items sold was not met.</p>
+            </li>
+            <li>
+                <p>Change cell <span class="type-text">B41</span> to 350 and notice that even when both quotas are met, OR still returns a TRUE value.</p>
+        </ol>
+        <p>We will now use the AND function to make sure that both of our quotas are met before a TRUE value is displayed.</p>
+        <ol class="instruction-list">
+            <li>
+                <p>In cell <span class="type-text">F45</span> Insert the function: <span class="type-text">=AND(F40>3500, F41>300)</span>.</p>
+                <p>Because the Total Items Sold is still under the quota of 300, AND returns a value of FALSE.</p>
+                <div class="centered-image-medium border">
+                <img src="images/log_fns-and.PNG" alt="Adding AND formula">
+                </div>
+            </li>
+            <li>
+                <p>Type 350 in cell <span class="type-text">F41</span> to see how this will change the answer in cell <span class="type-text">F45</span>.</p>
+            </li>
+        </ol>
+        <p>OR and AND functions are very basic, but can be combined with other functions to become more powerful.</p>
+
+         <h2>IF Functions and Nested Functions</h2>
+
+        <p>The IF function allows us to perform logical operations and return any value we desire (instead of just True & False). A good way to think this logic through is: 'If X is true, then return Y'. Likewise: 'If X is false, then return Z'. To start
+            things off with the IF function we continue with our Bonus Sales Examples. We are going to tell Excel that if our Total Sales are greater than $3500, then the Sales Team gets a $500 bonus.</p>
+        <ol class="instruction-list">
+            <li>
+                <p>In cell <span class="type-text">B58</span> Insert the function: <span class="type-text">=IF(B56>3500,"$500 Bonus", "No Bonus")</span>.</p>
+                <p>The result now returns "$500 Bonus" instead of just TRUE.</p>
+            </li>
+            <li>
+                <p>Change cell <span class="type-text">B53</span> to 0.</p>
+                <div class="centered-image-medium border">
+                <img src="images/log_fns-if.PNG" alt="Adding IF function">
+                </div>
+                <p>Notice that now the result is 'No Bonus.'</p>
+            </li>
+        </ol>
+        <p>We are now going to use a function within a function, also known as "nesting". More specifically, we will nest an OR function within an IF. In this example, if Total Sales are equal to or greater than $3500 or if Total Items Sold are equal to
+            or greater than 300, then a Bonus is given.</p>
+        <ol class="instruction-list">
+            <li>
+                <p>In cell <span class="type-text">B72</span> Insert the function: <span class="type-text">=IF(OR(B69>3500,B70>300),"$500 Bonus", "No Bonus")</span>.</p>
+                <div class="centered-image-medium border">
+                <img src="images/log_fns-if-nest-or.PNG" alt="Nested IF OR function">
+                </div>
+            </li>
+            <li>
+                <p>Change cell <span class="type-text">B66</span> to 0.</p>
+                <p>Make sure Total Sales are less than $3500 and make sure Total Items Sold are still less than 300. The result is changed to 'No Bonus' as the Total Sales criteria is no longer met.</p>
+            </li>
+        </ol>
+        <p>Next, we will nest an IF function within another IF function. The first IF function tests whether or not Total Sales is equal to or greater than $3500. If Total Sales are equal to or greater than $3500, then a result of "$500” will show.
+            Normally, as in our previous example, a simple result of "No Bonus” would be used if Sales were below $3500. However, let's say that we still want to give a smaller bonus of $100 if Total Sales were at least $3000. To do so, we will now use
+            another IF function in place of the "Result if False” entry in our original IF function. This is telling Excel to perform a second Logical Function instead of displaying a response of our choosing.</p>
+        <div class="centered-image-medium border">
+        <img src="images/log_fns-if-nest-if-1.png" alt="Sample logical problem">
+        </div>
+        <ol class="instruction-list">
+            <li>
+                <p>In cell <span class="type-text">B85</span> Insert: <span class="type-text">=IF(B83>3500,"$500 Bonus",IF(B83>3000,"$100 Bonus","No")).</span>
+                </p>
+                <p>We get a bonus of $500 because our total sales are above $3500.</p>
+                <div class="centered-image-large border">
+                <img src="images/log_fns-if-nest-if-2.PNG" alt="Formula for sample problem">
+                </div>
+            </li>
+            <li>
+                <p>Change cell <span class="type-text">B80</span> to 0.</p>
+                <p>Note that we still get a bonus of $100 because our total sales are still above $3000.</p>
+                <div class="centered-image-small border">
+                <img src="images/log_fns-if-nest-if-3.PNG" alt="Changing values to test formula 1">
+                </div>
+            </li>
+            <li>
+                <p>Change cell <span class="type-text">B78</span> to 0.</p>
+                <p>Now Total Sales are neither above $3500 nor $3000. Since neither requirements are met, no bonus is given.</p>
+                <div class="centered-image-small border">
+                <img src="images/log_fns-if-nest-if-4.PNG" alt="Changing values to test formula 2">
+                </div>
+            </li>
+        </ol>
+        <p>By combining two IF functions, Excel was able to perform some relatively complicated logic for us. Through various function combinations, you can utilize Excel's logic calculations to perform comparisons that will update as your data changes.</p>
+    </section>
+
+    <section class="topic">
+        <h1>Lookup, Array, and Summary Functions</h1>
+        <p>We have explored some of Excel's logical functions, but there are many other categories that we haven't used yet. We will now learn how to lookup values, change data's orientation, and summarize sorted data.</p>
+         <h2>VLOOKUP</h2>
+        <p>It is often helpful to keep data that we must refer to frequently in a table. VLOOKUP allows us to access that data based on a known value. In other words, this function searches for a value in the first column (the left- most column) of a table
+            and returns a value in the same row from another column in the table.</p>
+        <p>We will explore this new function by continuing our Sales Bonus examples. In this case we are going to look up what our employees' bonuses (the returned value) should be based on their sales (the known column value).</p>
+         <h3>VLOOKUP: One Input</h3>
+        <p>Switch to the VLOOKUP worksheet. The blank Bonus ($) column is what we will be filling in. The values that will be filled in will be found in the Bonus Table. The VLOOKUP function is how we will do this.</p>
+        <div class="centered-image-large border">
+        <img src="images/vlook-one-wksht.PNG" alt="VLOOKUP worksheet">
+        </div>
+        <ol class="instruction-list">
+            <li>
+                <p>Click in cell <span class="type-text">D6</span>.</p>
+            </li>
+            <li>
+                <p>Click on the Insert Function button.</p>
+            </li>
+            <li>
+                <p>Search for VLOOKUP and Click Go, then OK.</p>
+            </li>
+            <li>
+                <p>In the <span class="type-text">Lookup_Value</span> form, Enter <span class="type-text">C6</span>.</p>
+                <p>Lookup_value: The value to be found in the first column of the Bonus Table. In this instance, cell <span class="type-text">C6</span> provides the Sales number that corresponds to a given bonus.</p>
+            </li>
+            <li>
+                <p>In the <span class="type-text">Table_array</span> form, Enter cells <span class="type-text">$F$7:$G$32</span>.</p>
+                <p>Table_array: The table in which data is retrieved from. In this instance, cells <span class="type-text">F7:G32</span> make up the table.</p>
+            </li>
+            <li>
+                <p>In the <span class="type-text">Col_index_num</span> form, Enter 2.</p>
+                <p>Col_index_num: The column number in the table from which the matching value should be returned. In this instance, we are looking for the Bonus that matches up to a given Sales. Bonus is the 2nd column from the left, so 2 is the number
+                    used.</p>
+                <div class="centered-image-large border">
+                <img src="images/vlook-one-args.PNG" alt="Function Arguments window">
+                </div>
+            </li>
+            <li>
+                <p>AutoFill the remaining blank cells in column D with the VLOOKUP function by double-clicking the small green square in the bottom right corner of cell <span class="type-text">D6</span> when it is active.</p>
+            </li>
+            <li>
+                <p>Check a few employee Bonus values to see if they agree with the table.</p>
+            </li>
+            <li>
+                <p>Change the value of cell <span class="type-text">C6</span> from $24,132 to $10,000. The bonus decreases from $1,928 to $1,000.</p>
+                <div class="centered-image-medium border">
+                <img src="images/vlook-one-edit.PNG" alt="Sample solution">
+                </div>
+            </li>
+        </ol>
+        <p>Take the time to think about how this function works, as it is rather complicated. Review what each parameter in the function does and ask your instructor questions if you do not understand. It often takes two or three explanations to really understand
+            how VLOOKUP works.</p>
+
+         <h3>VLOOKUP: Two Inputs</h3>
+        <p>Sometimes a given value is based on two different inputs (tax tiers are based on both income and number of dependents, for example). Now we are going to recalculate our employee bonuses based on both Sales and an Employee Evaluation score. The
+            overall function and arguments are the same but here we must be slightly clever.</p>
+        <p>Earlier, we chose our 3rd argument, "col_index_num” by default: it was the only other column other than our original "lookup_col” value. Now we must find a way to correspond the Evaluation Scores to the Columns in our table.</p>
+        <div class="full-width-image border">
+        <img src="images/vlook-two-wksht.PNG" alt="Default sheet">
+        </div>
+        <p>Scroll down to the Multiple Columns exercise in the VLOOKUP worksheet. The arguments for the VLOOKUP function in this example are described below:</p>
+        <ul>
+            <li>
+                <p>The 1st argument "lookup_value" is the value to be found in the first column of the Bonus Table. In this instance cell C53 provides the Sales number that corresponds to a given bonus.</p>
+            </li>
+            <li>
+                <p>The 2nd argument "Table_array" is the table in which data is retrieved from. In this instance cells G54:P79 make up the table.</p>
+            </li>
+            <li>
+                <p>The 3rd argument, "Col_index_num" is the column number in the table from which the matching value should be returned. Unlike before, we have multiple columns to choose from. Cell D53 is referenced in the argument because this is the Evaluation
+                    score for our first employee. However, the score itself does not match up with the column numbers in our table (the 1st column is Sales, the 2nd column is a score of 0, etc.). You should notice that the actual column number is always
+                    2 ahead of the Score in our table. This is why for ‘Col_index_num’ we enter D53+2.</p>
+            </li>
+        </ul>
+        <ol class="instruction-list">
+            <li>
+                <p>In cell <span class="type-text">E53</span> Insert the function: <span class="type-text">=VLOOKUP(C53,$G$54:$P$79,D53+2)</span>.</p>
+                <p>You should see the result of $1,999 in cell <span class="type-text">E53</span>.</p>
+                <div class="centered-image-large border">
+                <img src="images/vlook-two-bonus-1.PNG" alt="Insert VLOOKUP function">
+                </div>
+            </li>
+            <li>
+                <p>Autofill the remaining cells in Column E with the function from cell <span class="type-text">E53</span>
+                </p>
+            </li>
+            <li>
+                <p>Check a few employees Bonus values to see if they agree with the table for both their sales total and evaluation score.</p>
+            </li>
+            <li>
+                <p>Change the value of cell <span class="type-text">D53</span> to $0.</p>
+                <p>You should see the result of $1,999 in cell <span class="type-text">E53</span> update to $1,649.</p>
+                <div class="centered-image-large border">
+                <img src="images/vlook-two-bonus-2.PNG" alt="Change values to see values">
+                </div>
+            </li>
+        </ol>
+        <p>In this example, we were able to add an extra dimension to the VLOOKUP function with a little ingenuity. In order to become an expert with Excel functions, you need to be willing to think outside the box and use them in new and creative ways.</p>
+
+         <h2>Transpose</h2>
+        <p>When organizing data in a spreadsheet environment, one must usually choose between a vertical or horizontal orientation. Depending on the volume, size, and format of your data on your worksheet, it may be beneficial to switch the orientation.
+            The Transpose function allows us to swap our row data and our column data quickly.</p>
+        <p>To begin, switch to the Transpose worksheet and examine the examples given.</p>
+        
+        <div class="centered-image-medium border">
+        <img src="images/transpose-eg.PNG" alt="Transpose worksheet"> 
+        </div>
+        
+         <h3>Transpose using Copy-Paste</h3>
+        <p>There are two different methods to transpose your data in Excel. The first is through a basic copy and paste operation. In the Copy and Paste exercise, note the basic set up and simple functions used in Columns E and F.</p>
+        
+        <div class="centered-image-large border"> 
+        <img src="images/transpose-copypaste-1.PNG" alt="Transpose usign copy and paste worksheet"> 
+        </div>
+        
+        <ol class="instruction-list">
+            <li>
+                <p>Select cells <span class="type-text">A20:F26</span> and Press Ctrl/Cmd+C to copy.</p>
+            </li>
+            <li>
+                <p>Select cell <span class="type-text">A29</span>. This is where we will be transposing our table.</p>
+            </li>
+            <li>
+                <p>Navigate to the Home tab. Click the arrow underneath Paste, and locate and click Transpose in the drop-down menu.</p>
+                
+                <div class="centered-image-tiny border"> <img src="images/transpose-copypaste-2.PNG" alt="Transpose optiom"> </div>
+            
+            </li>
+            <li>
+                <p>Examine what the operation has done.</p>
+            </li>
+            <div class="centered-image-large border"> <img src="images/transpose-copypaste-3.PNG" alt="Using transpose"> </div>
+        </ol>
+        <p>We have just inverted the values between our rows and columns. The values and formulas have also been preserved and reference the same values as before. While this copy-and-paste operation is handy it does have a major limitation: if we were to change a value in our original table, it would not update the new table accordingly. One solution to this is to use the transpose function.</p>
+         <h3>Transpose using the Built-In Function</h3>
+        <p>Up to this point, we have used functions and formulas that either manipulate single pieces of data (cells) at a time or return a single result. However, it is sometimes necessary to perform many calculations on one or more items in an array (or
+            a collection of single pieces of data). The Transpose function is such a function and will require several new steps.</p>
+        <ol class="instruction-list">
+            <li>
+                <p>Scroll down to the TRANSPOSE: Function exercise.</p>
+                
+                <div class="centered-image-large border">
+                <img src="images/transpose-fn-1.png" alt="Transpose function exercise">
+                </div>
+            
+            </li>
+            <li>
+                <p>Select cells <span class="type-text">A41:F47</span> but do NOT release the down-clicked mouse.</p>
+                <p>Note the dimension of the selected array in the Name Box which displays <span class="type-text">7R x 6C</span> and memorize this. We have selected 7 rows and 6 columns.</p>
+            </li>
+            <li>
+                <p>Click in cell <span class="type-text">A50</span> and drag to select 6 rows and 7 columns. You will see <span class="type-text">6R x 7C</span> in the Name Box.</p>
+            </li>
+            <div class="centered-image-large border">
+              <img src="images/transpose-fn-2-type.png" alt="Select cells">
+          </div>
+          <li>
+                <p>Do NOT click off these cells: while they are still selected begin to Type: <span class="type-text">=TRANSPOSE(</span>.</p>
+            </li>
+            <div class="centered-image-large border">
+                <img src="images/transpose-fn-3.png" alt="Type function">
+          </div>
+          <li>
+                <p>Select cells <span class="type-text">A41:F47</span> as the array that we wish to transpose.</p>
+                <div class="centered-image-large border">
+                <img src="images/transpose-fn-4.png" alt="Add cels to formula">
+                </div>
+            </li>
+            <li>
+                <p>While still editing the formula, Press Control/Command+Shift+Enter. This applies the current function or formula to all selected cells.</p>
+            </li>
+            <div class="centered-image-large border">
+                <img src="images/transpose-fn-5.png" alt="Apply formula to all selected cells">
+            </div>
+            <li>
+                <p>Change the value in cell <span class="type-text">B42</span> to 0. Notice the automatic change in the referenced array (<span class="type-text">A51</span>) and the other cells that use that cell as an argument for a function (cells <span class="type-text">E42</span> and <span class="type-text">B54</span>).</p>
+            </li>
+            <div class="centered-image-large border">
+                <img src="images/transpose-fn-6.png" alt="Changes values to see effect">
+            </div> 
+        </ol>
+        <p>You have just performed your first array function in Excel. Note that you are unable to change any cell in the range A50:F55. This collection of cells is now treated as a single object.</p>
+    </section>
+
+    <section class="topic">
+        <h1>Text Formatting</h1>
+        <p>Strings of text in Excel can be formatted to add decimal places and points, commas and currency signs. We can also concatenate text, that is, join different text elements into singular strings. This is useful to output sentences in Excel.</p>    
+        <h2>TEXT function</h2>
+        <p>The TEXT function converts a numeric value to text and lets you specify the display formatting by using special format strings. This function is useful in situations where you want to display numbers in a more readable format, or you want to combine numbers with text or symbols.</p>
+        <p>The TEXT function syntax TEXT(value, format_text) has the following arguments:</p>
+        <ul>
+            <li>
+                <p>value: A numeric value, a formula that evaluates to a numeric value, or a reference to a cell containing a numeric value.</p>
+            </li>
+            <li>
+                <p>format_text: A numeric format as a text string enclosed in quotation marks, for example "m/d/yyyy" or "#,##0.00". See the following sections for specific formatting guidelines.</p>
+            </li>
+        </ul>
+        <p>Switch to the TEXT worksheet and find the TEXT() function exercise. In this exercise, we will learn how to format numbers and dates, such as changing decimal places, and adding commas and dollar signs.</p>
+            
+        <div class="centered-image-large border"> <img src="images/text-text-1.PNG" alt="TEXT function exercise"> </div>
+        <p>Firstly, we will change the number of decimal places visible for a given number. As shown below, we can do this using either zeros (0) or the pound sign (#) as parameters. The key difference between the two is that the # parameter looks for a number in its position, and if there is none, it does not display anything. However, if a 0 parameter does not find a number in its position, it displays a zero in its place.</p>
+        <ol class="instruction-list">
+            <li>
+                <p>Select cell <span class="type-text">B4</span> and type <span class="type-text">=TEXT(A4,"#.##")</span>. Press Enter.</p>
+            </li>
+            <li>
+                <p>Select <span class="type-text">B6</span> and type <span class="type-text">=TEXT(A6,"0.00")</span>. Press Enter.</p>
+                <p>We get the same result in both cases above. However, the next two steps will elucidate the difference between the two.</p>
+            </li>
+            <li>
+                <p>Select <span class="type-text">B8</span> and type <span class="type-text">=TEXT(A8,"#.##")</span>. Press Enter.</p>
+            </li>
+            <li>
+                <p>Select <span class="type-text">B10</span> and type <span class="type-text">=TEXT(A10,"0.00")</span>. Press Enter.</p>
+                <p>No zeros were displayed in cell B8 as the # parameter did not find a number in its position. We recommend using zeros so this doesn't occur.</p>
+            </li>
+        </ol>
+        <div class="centered-image-small border"> <img src="images/text-text-2.PNG" alt="Adding formulas to cells"> </div>
+        <p>In the next three entries of the table, we will go over changing a number into currency format.</p>
+        <ol class="instruction-list">
+        	<li>
+            <p>Select <span class="type-text">B12</span> and type <span class="type-text">=TEXT(A12,"#,###")</span>. Press Enter.</p>
+            </li>
+            <li>
+            <p>Select <span class="type-text">B14</span> and type <span class="type-text">=TEXT(A14,"#,###.00")</span>. Press Enter.</p>
+            </li>
+            <li>
+            <p>Select <span class="type-text">B16</span> and type <span class="type-text">=TEXT(A16,"$#,###.00")</span>. Press Enter.</p>
+            </li>
+        </ol>
+
+        <div class="centered-image-small border"> <img src="images/text-text-3.PNG" alt="Changing number to currency format"> </div>
+        
+        <p>Next, we will go over some date formatting options.</p>
+		<ol class="instruction-list">
+			<li>
+        		<p>Select <span class="type-text">B18</span> and type <span class="type-text">=TEXT(A18,"mm-dd-yyyy")</span>. Press Enter.</p>
+        	</li>
+            <li>
+        		<p>Select <span class="type-text">B20</span> and type <span class="type-text">=TEXT(A20,"dddd")</span>. Press Enter.</p>
+        	</li>
+            <li>
+        		<p>Select <span class="type-text">B22</span> and type <span class="type-text">=TEXT(A22,"mmmm dd, yyyy")</span>. Press Enter.</p>
+        	</li>
+        </ol>
+        <div class="centered-image-small border"> <img src="images/text-text-4.PNG" alt="Changing numbers to dates"> </div>
+        <h2>Concatenating text using "&"</h2>
+        <p>Strings of text can be concatenated or combined using the ampersand (&). In the next exercise, we use "&" to combine text into readable sentences. Not the use of blank space within quotation marks to display spaces between words in the "Hello World!" example.</p>
+        <ol class="instruction-list">
+        	<li>
+                <p>Select <span class="type-text">E30</span> and type <span class="type-text">=A30&" "&B30&" "&C30&" "&D30&".&quot;</span>. Press Enter.</p>
+            </li>
+            <div class="full-width-image border"> <img src="images/text-concat-1.PNG" alt="Add formula"> </div>
+        	<li>
+                <p>Select <span class="type-text">E31</span> and type <span class="type-text">=A31&" "&B31&" "&C31&" "&D31&".&quot;</span>. Press Enter.</p>
+            </li>
+        	<li>
+                <p>Select <span class="type-text">E32</span> and type <span class="type-text">=A32&" "&B32&" "&C32&" "&D32&".&quot;</span>. Press Enter.</p>
+            </li>
+        </ol>
+
+        <div class="full-width-image border"> <img src="images/text-concat-2.PNG" alt="Fill rest of the cells"> </div>
+         <h2>Concatenating formatted text using both "&" and TEXT()</h2>
+        <p>In this last exercise, we will combine the methods of text formatting and concatenating form the previous two exercises to create long strings of the given data.</p>
+        <p>The syntax for this is:<br>
+        <span class="highlight">=&lt;Name&gt;1&" "&&lt;Name2&gt;&" earned "&TEXT(&lt;Amount&gt;,"$#,000.00")&" on "&TEXT(&lt;Date&gt;,"mmmm dd, yyyy")</span>,<br>
+        where the TEXT function for the Amount adds a Dollar sign, commas every three digits and limits the decimal places to two, and the TEXT function for the Date converts the "mm/dd/yyyy" format to the "Month_name Date, Year" format.</p>
+        
+        <ol class="instruction-list">
+            <li>
+                <p>Select cell <span class="type-text">E40</span> and type <span class="type-text">=A40&" "&B40&" earned "&TEXT(C40,"$#,###.00")&" on "&TEXT(D40,"mmmm dd, yyyy")</span>. Press Enter.</p>
+            </li>
+            <div class="centered-image-large border"> <img src="images/text-combine-1.PNG" alt="Use TEXT and & "> </div>
+            <li>
+                <p>Select cell <span class="type-text">E41</span> and type <span class="type-text">=A41&" "&B41&" earned "&TEXT(C41,"$#,###.00")&" on "&TEXT(D41,"mmmm dd, yyyy")</span>. Press Enter.</p>
+            </li>
+            <li>
+                <p>Enter your own data in row 42 for more practice if you would like.</p>
+            </li>
+            <li>
+                <p>Select cell <span class="type-text">E42</span> and type <span class="type-text">=A42&" "&B42&" earned "&TEXT(C42,"$#,###.00")&" on "&TEXT(D42,"mmmm dd, yyyy")</span>. Press Enter.</p>
+            </li>
+        </ol>
+		<div class="full-width-image border"> <img src="images/text-combine-2.PNG" alt="Appyl to rest of the cells"> </div>
+        <p>Your Formatted Combined String column should look like the image above. You may change the formatting options and try out various arguments for the TEXT function. You can find all the text formatting arguments <a href="https://support.office.com/en-us/article/TEXT-function-20d5ac4d-7b94-49fd-bb38-93d29371225c"><b>here</b></a>.</p>
+    </section>
+
+    <section class="topic">
+        <h1>Formulas Tab</h1>
+        <p>As has been seen up to this point, Excel is an incredibly powerful tool for organizing, analyzing, creating, and manipulating numeric data. We have already used multiple methods to access these functions: typing it in ourselves, using the insert function button, and using the drop-down menus when typing. The last method we’ll cover to insert functions is on the Formulas tab.</p>
+		<div class="full-width-image border"> <img src="images/formulas-tab.PNG" alt="Formulas tab"> </div>
+        <p>The Formulas tab gives us access to Excel’s entire Function Library, much like the Insert Function button. Additionally, it can help us understand what our functions are doing, and fix errors that may be causing them to behave incorrectly.</p>
+        <h2>Additonal Relevant Functions</h2>
+        <p>We have covered basic formulas (addition, multiplication, etc.) and a wide sampling of functions (SUM, VLOOKUP, SUBTOTAL, etc.) up to this point. There are quite a few more basic and advanced functions that exist and are important to be aware of in Excel. Often you will want to either order, round, or convert numbers in your spreadsheets; these functions will be introduced using the formulas tab (the other insertion methods previously introduced are valid as well).</p>
+        <h3>Ranking</h3>
+        <p>Sometimes we need to know the rank of our data (where each data value lies in comparison to all other values). The RANK.EQ function does this</p>
+        <ol class="instruction-list">
+            <li>
+                <p>Switch to the More Functions worksheet and click on the Formulas tab on the ribbon.</p>
+            </li>
+            <li>
+                <p>Select cell <span class="type-text">B18</span>.</p>
+            </li>
+            <li>
+                <p>In the Formulas tab, select More Functions > Statistical.</p>
+            </li>
+            <div class="centered-image-medium border">
+            	<img src="images/formulas-rankeq-fn.PNG" alt="Statistical funtions option">
+			</div>
+            <li>
+                <p>Scroll through the list and locate and select RANK.EQ.</p>
+            </li>
+            <li>
+                <p>Once the Function Arguments window opens, select cell <span class="type-text">A18</span> for the Number argument.</p>
+            </li>
+            <li>
+                <p>Select range <span class="type-text">A18:A117</span> as the Ref argument. (Be sure to add dollar signs to make it an absolute reference so we can use autofill.)</p>
+            </li>
+            <li>
+                <p>The Order argument is left blank. Click OK.</p>
+            </li>
+            <div class="centered-image-large border">
+        	<img src="images/formulas-rankeq-args.PNG" alt="Add function arguments">
+			</div>
+            <li>
+                <p>Autofill the equation for the rest of column B.</p>
+            </li>
+        </ol>
+        <p>Now, we can see where each value lies in relation to all other values without having to sort. This may be especially beneficial if a different order to your data is important.</p>
+        <h3>Rounding numbers</h3>
+        <p>The data values provided have many decimals. We can round those off to any amount we choose using the ROUND function. Although it appears similar to using the increase/decrease decimal buttons on the Home tab, do not confuse the two. By using the increase/decrease decimal buttons, you are only changing the number of decimal places that Excel displays (but all decimal values remain in memory). On the contrary, the ROUND function actually changes the value in Excel’s memory to only contain the specified number of decimal places. This distinction can make a difference in calculations for which precision is required. Let’s say we only need our data values to the nearest 100th (2 decimal places).</p>
+        <ol class="instruction-list">
+            <li>
+                <p>Click on cell <span class="type-text">C18</span>.</p>
+            </li>
+            <li>
+                <p>In the Formulas tab, Select Math & Trig and then locate ROUND.</p>
+            </li>
+            <div class="centered-image-small border">
+        	<img src="images/formulas-round-fn.PNG" alt="Select ROUND function">
+			</div>
+            <li>
+                <p>Once the Function Arguments window opens, select cell <span class="type-text">A18</span> for the Number argument</p>
+            </li>
+            <li>
+                <p>Enter 2 as the Num_digits argument and click OK.</p>
+            </li>
+            <div class="centered-image-large border">
+        	<img src="images/formulas-round-args.PNG" alt="Add function arguments">
+			</div>
+            <li>
+                <p>Autofill this formula for the rest of column C.</p>
+            </li>
+            <li>
+                <p>Use the Decrease Decimal Button on the Number panel in the Home tab to hide all the extra zeros.</p>
+            </li>
+            <div class="centered-image-large border">
+        	<img src="images/formulas-round-dec.PNG" alt="Use decrease decimals button">
+			</div>
+        </ol>
+        <h3>Unit Conversions</h3>
+        <p>For many types of data there are various unit systems that can be used to quantify a measurement (temperature: Fahrenheit/Celsius, length: foot/meter, etc). Excel has a built-in function, CONVERT, which can switch your data between a large list of different unit systems. For this exercise, let’s treat the data points as Temperature measurements in degrees Fahrenheit that we want to convert to degrees Celsius.</p>
+        <ol class="instruction-list">
+            <li>
+                <p>Select cell <span class="type-text">D18</span>.</p>
+            </li>
+            <li>
+                <p>Using the formula bar, Insert the formula:<span class="type-text"> =CONVERT(A18,”C”,”F”)</span>.</p>
+                <div class="centered-image-medium border">
+        	<img src="images/formulas-convert.PNG" alt="Insert formula">
+			</div>
+                <p>The drop-down menu for this function is useful to know the different units available. The drop-down menu feature does not appear in OSX.</p>
+            </li>
+            <li>
+                <p>Autofill the function for the rest of column D.</p>
+            </li>
+        </ol>
+        <p>Now all the data values are converted from degrees (C) to degree (F).  Look at the values in row 23 to check the conversion: 0 degrees Celsius does equal 32 degrees Fahrenheit (the freezing point of water).</p>
+        <h3>Large and Small Functions</h3>
+        <p>At times we will want to know the Kth largest or smallest value in our data, where we can specify the magnitude of K (say, the 10th). We can use functions instead of having to sort our data and count up/down by ten places.</p>
+        <ol class="instruction-list">
+            <li>
+                <p>Select cell <span class="type-text">E18</span>.</p>
+            </li>
+            <li>
+                <p>Click on the Insert Functions Icon and Search to find LARGE function.</p>
+            </li>
+            <li>
+                <p>Select the range <span class="type-text">A18:A117</span> for the Array argument.</p>
+            </li>
+            <li>
+                <p>Enter 10 as the K argument (we want the 10th largest number).</p>
+            </li>
+            <div class="centered-image-medium border">
+        	<img src="images/formulas-largesmall.PNG" alt="Insert formula">
+			</div>
+            <li>
+                <p>Repeat in cell <span class="type-text">F18</span> for the small function: <span class="type-text">=SMALL(A18:A117,10)</span>.</p>
+            </li>
+        </ol>
+        <p>Internally, the function orders the array as a list in numeric order and selects the 10th largest data point (638.42) and the 10th smallest data point (21.30).</p>
+    </section>
+    <!-- END MAIN CONTENT -->
+</body>
+
+</html>
